@@ -1,0 +1,22 @@
+{
+  "project": {
+    "name": "eCommerce Playwright Tests",
+    "type": "test-automation",
+    "language": "typescript"
+  },
+  "preferences": {
+    "useGraphify": true,
+    "graphifyPath": "graphify-out/GRAPH_REPORT.md",
+    "autoUpdateGraph": true
+  },
+  "codeStyle": {
+    "indent": 2,
+    "quotes": "single",
+    "semicolons": true
+  },
+  "testing": {
+    "framework": "playwright",
+    "pattern": "page-object-model",
+    "reporting": ["playwright-html", "allure"]
+  }
+}

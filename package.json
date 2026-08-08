@@ -1,0 +1,41 @@
+{
+  "name": "ecommerce-playwright-tests",
+  "version": "1.0.0",
+  "description": "End-to-end Playwright test automation for TutorialsNinja e-commerce website",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:pw-ui": "npx playwright test --ui",
+    "test:debug": "npx playwright test --debug",
+    "test:chrome": "npx playwright test --project=chromium",
+    "test:firefox": "npx playwright test --project=firefox",
+    "test:ui": "npx playwright test src/tests/ui",
+    "test:api": "npx playwright test src/tests/api",
+    "test:e2e": "npx playwright test src/tests/e2e",
+    "test:ui:auth": "npx playwright test src/tests/ui/auth",
+    "test:ui:products": "npx playwright test src/tests/ui/products",
+    "test:ui:cart": "npx playwright test src/tests/ui/cart",
+    "test:ui:checkout": "npx playwright test src/tests/ui/checkout",
+    "report": "npx playwright show-report reports/html-report",
+    "allure:generate": "npx allure generate allure-results --clean -o allure-report",
+    "allure:open": "npx allure open allure-report",
+    "allure:report": "npm run allure:generate && npm run allure:open",
+    "codegen": "npx playwright codegen https://tutorialsninja.com/demo/"
+  },
+  "keywords": [
+    "playwright",
+    "e2e",
+    "testing",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "allure-commandline": "^2.25.0",
+    "allure-playwright": "^2.12.0",
+    "dotenv": "^16.3.1"
+  }
+}
